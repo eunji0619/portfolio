@@ -1,20 +1,19 @@
 /* 상단메뉴 */
 .header-h3{
     font-family: 'Black Han Sans', sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 h2{
    font-family: 'Black Han Sans', sans-serif;
 }
 .header-profile{
     background-color: rgba(40, 71, 63, 0.7);
-    height: auto;
+    height: 550px;
     width: 100%;
     padding: 2rem 2rem;
 }
 .header-box{
-    /* background-image:url("orgin/img/header.png"); */
-    background-image:url(".png");
+    background-image:url("img/header.png");
     background-size: cover;
 }
 .header-h3{
@@ -24,10 +23,13 @@ h2{
 .header-hr{
     width: 3.25rem;
     border: none;
-    border-top: .2rem solid #f4623a;
+    /*border-top: .2rem solid #f4623a;*/
     margin: 1.5rem auto;
     height: 0;
     opacity: 1;
+}
+.text{
+    text-decoration: underline 5px rgb(248, 205, 7);
 }
 .header-img{
     width: 400px;
@@ -53,16 +55,13 @@ h2{
     font-size: 20px;
 }
 /* about me  */
-.about{
-    width: 100%;
-    height: 350px;
-}
 .About-box{
     display: flex;
     flex-flow: row wrap;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 3rem;
+    margin-left: 20px;
 }
 .About-box2{
     display: flex;
@@ -71,7 +70,7 @@ h2{
     margin-right: 2rem;
 }
 .about-name{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     width: 33%;
 }
 .about-name2{
@@ -80,7 +79,7 @@ h2{
 }
 h2{
     text-align: center;
-    font-size: 4em;  
+    font-size: 3em;  
 }
 .about-name3{
     font-weight: 700;
@@ -88,11 +87,15 @@ h2{
 }
 /*skills*/
 .skills{
-background-color: #ffc107;
+background-color: #d9cdfa;
 text-align: center;
 }
 .skills-h2{
     margin-bottom: 3rem;
+}
+.skiils-img1{
+    width: 18rem;
+    height: 21rem;
 }
 .text-wrap .skills-box .skills-box2
 {
@@ -121,6 +124,10 @@ text-align: center;
 }
 
 /*projects*/
+.projects{
+    width: 100%;
+    height: 550px;
+}
 ul{
     position: relative;
     clear: both;
@@ -146,10 +153,6 @@ a {
 
 table {
     border-spacing: 0
-}
-
-fieldset,img {
-    border: 0
 }
 
 address,caption,cite,code,dfn,em,strong,th,var {
@@ -179,29 +182,20 @@ body {
 body,html {
     overflow-x: hidden
 } 
-
-
-
 h3 {
     font-size: 3em
 }
-.awards i{
-    color : #ed1a44;
-}  
 
 .hero {
     padding: 10em 0;
     text-align: center;
     max-width: 1000px;
     margin: 0 auto
-    
 } 
-
 a {
     text-decoration: none;   
     color: #000;
 }
-
 .nav-wrapper {
     line-height: 1em;
     position: relative;
@@ -217,8 +211,6 @@ a {
     transition: all ease .5s;
     color: hsla(0,0%,100%,.7);
 }
-
-
 .nav-menu {
     float: right;
     align-items: center;
@@ -231,8 +223,11 @@ a {
 }
 
 .nav-menu li a {
-    display: block
+    display: block;
 } 
+.nav-menu li a:hover{
+color: white;
+}
 
 .nav-menu li a {
     letter-spacing: .12em;
@@ -251,8 +246,8 @@ a {
 }
 
 .project {
-    margin: 0 1rem;
-    width: 30%;
+    /*margin: 0 1rem;*/
+    width: 33%;
     position: relative;
     height: 350px;
     float: left;
@@ -306,10 +301,10 @@ a {
     cursor: pointer
 }
 
-.no-link,.no-link:focus,.no-link:hover,.project-content:focus,.project-content:hover,a.project-content {
+/* .no-link,.no-link:focus,.no-link:hover,.project-content:focus,.project-content:hover,a.project-content {
     background-image: none;
     text-shadow: none
-}
+} */
 
 .fab{
   font-size: 2rem;
@@ -320,6 +315,7 @@ a {
     text-align: center;
     color: #fff;
     font-size: 2.4em;
+    overflow-y: hidden;
 }
 
 .project-underline {
@@ -334,29 +330,32 @@ a {
     position: relative
 }
 
-.project-description span,.project-title span {
+.project-description span{
     -webkit-transform: translateY(125%);
     -moz-transform: translateY(125%);
     -ms-transform: translateY(125%);
     -o-transform: translateY(125%);
     transform: translateY(125%);
     will-change: transform;
-    -webkit-transition: -webkit-transform .45s cubic-bezier(.52,.01,.16,1);
-    -moz-transition: -moz-transform .45s cubic-bezier(.52,.01,.16,1);
-    transition: transform .45s cubic-bezier(.52,.01,.16,1);
+    -webkit-transition: -webkit-transform .45s cubic-bezier(.52, .01, .16, 1);
+    -moz-transition: -moz-transform .45s cubic-bezier(.52, .01, .16, 1);
+    transition: transform .45s cubic-bezier(.52, .01, .16, 1);
     -webkit-transition-duration: .75s;
     -moz-transition-duration: .75s;
     transition-duration: .75s;
     display: block
 }
 
-.project.active .project-underline,.project:not(.no-hover):hover .project-underline {
+.project.active .project-underline,
+.project:not(.no-hover):hover .project-underline {
     width: 4.5em;
     -webkit-transition-delay: .5s;
     transition-delay: .5s
 }
 
-.project.active .project-description span,.project.active .project-title span,.project:not(.no-hover):hover .project-description span,.project:not(.no-hover):hover .project-title span {
+.project.active .project-description span,
+.project:not(.no-hover):hover .project-description span
+ {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -375,34 +374,46 @@ a {
     -webkit-transition-delay: 50ms;
     transition-delay: 50ms
 }
-
 .project-1 {
     background-color: #0b2a3e;
-    width: 33.33%;
+    width: 33%;
+    height: 350px
+}
+.project-2 {
+    background-color: #ed1a44;
+    width: 33%;
     height: 350px
 }
 
-
-.project-2 {
-    background-color: #ed1a44 
-}
-
 .project-3 {
-    background-color: #000
+    background-color: #717c7b;
+    width: 33%;
+    height: 350px
 }
 
 .project-4 {
-    background-color: #42b983
+    background-color: #42b983;
+    width: 33%;
+    height: 350px
 }
 
 .project-5 {
-    background-color: #a67d5d
+    background-color: #a67d5d;
+    width: 33%;
+    height: 350px
 }
 
 .project-6 {
-    background-color: #1faec8
+    background-color: #1faec8;
+    width: 33%;
+    height: 350px
 }
-
+.certificate{
+    background-color: #d9cdfa;
+    text-align: center;
+    width: 100%;
+    height: 380px;  
+}
 .rank {
     color: #b5b5b5;
     font-family: 'Open Sans',sans-serif;
@@ -449,12 +460,12 @@ a {
 }
 
 .come-in {
-    opacity: 1; 
+    opacity: 1;
     transform: translateY(0);
     width: 100%;
     max-width: 90rem;
-    padding: 4rem 2rem;
-    margin: 0 auto;
+    margin: 0px auto;
+    padding: 30px 10px;
 }
 .move{
     position: fixed;
@@ -488,7 +499,7 @@ a {
     }
 
     .project-1 {
-        width: 50%
+        width: 100%
     }
 
     h3 {
@@ -507,7 +518,6 @@ a {
         font-size: 3em;
         padding: 2em 0 .3em 0
     }
-
    
     .nav-menu {
         display: none
@@ -516,7 +526,7 @@ a {
 
 @media all and (max-width: 660px) {
     h3 {
-        font-size:2.4em
+        font-size:2.0em
     }
 }
 
@@ -529,8 +539,8 @@ a {
         height: 350px
     }
 
-    h3 {
-        font-size: 1.8em
+    .header-h3{
+        font-size: 3rem;
     }
 
     .project-content {
@@ -560,9 +570,16 @@ a {
         width: 100%;
         margin-right: 0
     }
+    .skiils-img1 {
+        width: 16rem;
+        height: 21rem;
+    }
 }
 
 @media all and (max-width: 400px) {
+    .header-h3{
+        font-size: 3rem;
+    }
     h2 {
         font-size:2.5em
     }
@@ -570,9 +587,6 @@ a {
     .text-wrap p {
         font-size: .95em
     }
-
-    
-
     .footer {
         margin: 80px 20px
     }
@@ -588,34 +602,81 @@ a {
     .hero {
         padding: 6em 0
     }
+    .skiils-img1 {
+        width: 16rem;
+        height: 21rem;
+    }
+}
+@media all and (max-width: 600px){
+    .about-img{
+        border: 0
+    }
 }
 
 @media all and (max-width: 350px) {
-    .project{
+    .project {
         position:relative;
-        
     }
 }
 
 @media all and (max-width: 1000px) {
-
-    .about-name {
-    margin: auto;
-    width: 50%;
+    .about-name{
+       width: 50%;
     }
-        
+} 
+@media all and (max-width: 750px) {
+    .about-name{
+       width: 100%;
+    }
 }
-@media all and (max-width: 700px) {
-
-    .About-box {
-   display: block;
-    }
-        
+@media all and (max-width: 600px){
+.text-wrap .skills-box .skills-box2 {
+    display: inline-block;
+    padding: 1.5rem;
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+    text-align: center;
+    color: #f4623a;
+    /*margin: 3rem 1rem 3rem 1rem;*/
+    margin: 10px 0;
+    transition: 0.5s ease;
 }
-@media all and (max-width: 500px) {
-    .banna {
-   width: 300px;
-   height: 300px;
+}
+@media all and (max-width: 350px) {
+    .about-img0{
+       border: 0;
+       width: 40px;
     }
-        
+}
+@media all and (max-width: 600px) {
+    .about-img{
+       border: 0;
+       width: 100%;
+    }
+}
+@media all and (max-width: 600px) {
+    .skiils-img{
+       border: 0;
+       width: 100%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .slick-track{
+       border: 0;
+       width: 50%;
+    }
+}
+@media all and (max-width: 600px) {
+    .nav-logo{
+       font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .nav-menu{
+       display: none;
+    }
 }
