@@ -1,5 +1,5 @@
 # 🙇반갑습니다.
 
-# https://leesibin.github.io/portfolio/
+# https://eunji0619.github.io/portfolio/
 
-# 봐주셨어 감사합니다!
+# 포트폴리오입니다
