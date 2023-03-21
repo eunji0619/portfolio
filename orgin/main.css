@@ -13,7 +13,8 @@ h2{
     padding: 2rem 2rem;
 }
 .header-box{
-    background-image:url("/orgin/img/header.png");
+    /* background-image:url("orgin/img/header.png"); */
+    background-image:url(".png");
     background-size: cover;
 }
 .header-h3{
