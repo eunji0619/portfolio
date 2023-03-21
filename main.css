@@ -58,6 +58,7 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 3rem;
+    margin-left: 100px;
 }
 .About-box2{
     display: flex;
@@ -66,7 +67,7 @@ h2{
     margin-right: 2rem;
 }
 .about-name{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     width: 33%;
 }
 .about-name2{
