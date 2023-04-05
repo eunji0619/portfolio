@@ -10,7 +10,7 @@ window.onload = () =>{
       if (scrollpos >= about.offsetHeight -500) add_class_on_scroll(about)
       if (scrollpos >= tech.offsetHeight -1200) add_class_on_scroll(tech)
       if (scrollpos >= projects.offsetHeight +1200) add_class_on_scroll(projects)
-      if (scrollpos >= certificate.offsetHeight -1000 ) add_class_on_scroll(certificate) 
+      if (scrollpos >= certificate.offsetHeight +2000 ) add_class_on_scroll(certificate) 
     }) 
 } 
 document.addEventListener("DOMContentLoaded", _ => {
