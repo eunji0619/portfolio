@@ -13,7 +13,7 @@ h2{
     padding: 2rem 2rem;
 }
 .header-box{
-    background-image:url("/orgin/img/header.png");
+    background-image:url("./orgin/img/header.png");
     background-size: cover;
 }
 .header-h3{
@@ -414,7 +414,17 @@ color: white;
 }
 
 .project-7 {
-    background-color:bisque;
+    background-color:rgb(250, 198, 134);
+    width: 33%;
+    height: 350px
+}
+.project-8 {
+    background-color:rgb(152, 228, 137);
+    width: 33%;
+    height: 350px
+}
+.project-9 {
+    background-color:rgb(241, 163, 169);
     width: 33%;
     height: 350px
 }
